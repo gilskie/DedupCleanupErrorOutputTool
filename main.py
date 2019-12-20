@@ -15,6 +15,9 @@ def load_configuration_file():
     # for sandbox configuration
     complete_executable_path = sys.path[0] + '\configurationFile.ini'
 
+    # for live configuration
+    # complete_executable_path = sys.executable.replace("DedupCleanupErrorOutputTool.exe", "configurationFile.ini")
+
     config.read(complete_executable_path)
 
     # print(f"executable path {complete_executable_path}")
